@@ -161,7 +161,7 @@ function addToTeam() {
             type: 'list',
             name: 'addMember',
             message: 'What kind of employee would you like to add to your team?',
-            choices: ['Manager', 'Intern', 'Engineer', 'Nevermind']
+            choices: ['Manager', 'Intern', 'Engineer', 'Create Roster']
         }
     ])
         .then(answers => {
