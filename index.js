@@ -98,36 +98,34 @@ function addManager() {
         })
 }
 
-// Intern
-// function addManager() {
-//     inquirer.prompt([{
-//         type: 'input',
-//         name: 'managerName',
-//         message: 'What is your name?',
-//     },
-//     {
-//         type: 'input',
-//         name: 'managerId',
-//         message: 'What is your ID?',
-//     },
-//     {
-//         type: 'input',
-//         name: 'managerEmail',
-//         message: 'What is your email?',
-//     },
-//     {
-//         type: 'input',
-//         name: 'managerOfficeNumber',
-//         message: 'What is your office number?',
-//     }])
-//         .then(answers => {
-//             const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber)
-//             teamMembers.push(manager);
-//             console.log(teamMembers);
-//             addToTeam()
-//         })
-// }
-// Engineer
+function addIntern() {
+    inquirer.prompt([{
+        type: 'input',
+        name: 'internName',
+        message: 'What is your name?',
+    },
+    {
+        type: 'input',
+        name: 'internId',
+        message: 'What is your ID?',
+    },
+    {
+        type: 'input',
+        name: 'internEmail',
+        message: 'What is your email?',
+    },
+    {
+        type: 'input',
+        name: 'school',
+        message: 'What school did you attend?',
+    }])
+        .then(answers => {
+            const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.school)
+            teamMembers.push(intern);
+            console.log(teamMembers);
+            addToTeam()
+        })
+}
 
 // function addManager() {
 //     inquirer.prompt([{
