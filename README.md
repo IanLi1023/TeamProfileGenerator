@@ -21,6 +21,8 @@ Download the application and run npm install.
 
 ## Usage
 Open a terminal window, type in "node index" and answer the provided questions. Once you have completed adding all the people on your roster, select the choice "create roster" and it  will generate an HTML file with your roster.
+
+![caption](TeamProfileGenerator.gif)
     
 ## License
 Team Profile Generator is covered under the MIT license.
